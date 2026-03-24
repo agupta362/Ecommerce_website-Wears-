@@ -1,0 +1,67 @@
+project_id = "bglggsewgfvsbwngexvy"
+
+[functions.rate-limiter]
+verify_jwt = false
+
+[functions.send-confirmation-email]
+verify_jwt = false
+
+[functions.send-order-notification]
+verify_jwt = false
+
+[functions.ncm-get-branches]
+verify_jwt = false
+
+[functions.ncm-calculate-rate]
+verify_jwt = false
+
+[functions.ncm-create-shipment]
+verify_jwt = false
+
+[functions.ncm-track-shipment]
+verify_jwt = false
+
+[functions.ncm-webhook]
+verify_jwt = false
+
+[functions.ncm-sync-statuses]
+verify_jwt = false
+
+[functions.ncm-get-comments]
+verify_jwt = false
+
+[functions.ncm-add-comment]
+verify_jwt = false
+
+[functions.ncm-create-ticket]
+verify_jwt = false
+
+[functions.ncm-close-ticket]
+verify_jwt = false
+
+[functions.ncm-return-order]
+verify_jwt = false
+
+[functions.ncm-exchange-order]
+verify_jwt = false
+
+[functions.ncm-redirect-order]
+verify_jwt = false
+
+[functions.generate-invoice]
+verify_jwt = false
+
+[functions.create-instore-order]
+verify_jwt = false
+
+[functions.create-order]
+verify_jwt = false
+
+[functions.track-guest-order]
+verify_jwt = false
+
+[functions.check-abandoned-carts]
+verify_jwt = false
+
+[functions.post-purchase-sequence]
+verify_jwt = false

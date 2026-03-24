@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" fill="none">
+  <defs>
+    <linearGradient id="promoBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#243554"/>
+      <stop offset="50%" stop-color="#1a2744"/>
+      <stop offset="100%" stop-color="#243554"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#promoBg)"/>
+  
+  <!-- Decorative lines -->
+  <line x1="0" y1="100" x2="1200" y2="100" stroke="#c9302c" stroke-width="2" opacity="0.3"/>
+  <line x1="0" y1="200" x2="1200" y2="200" stroke="#e6a82c" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Left jersey -->
+  <g transform="translate(50, 30) scale(0.6)" opacity="0.15">
+    <path d="M100 40 L140 65 L165 50 L195 65 L250 40 L275 90 L255 240 L175 270 L155 250 L135 270 L55 240 L35 90 Z" fill="#ffffff"/>
+  </g>
+  
+  <!-- Right jersey -->
+  <g transform="translate(950, 30) scale(0.6)" opacity="0.15">
+    <path d="M100 40 L140 65 L165 50 L195 65 L250 40 L275 90 L255 240 L175 270 L155 250 L135 270 L55 240 L35 90 Z" fill="#ffffff"/>
+  </g>
+  
+  <!-- Center content placeholders -->
+  <rect x="350" y="80" width="500" height="35" rx="4" fill="#ffffff" opacity="0.25"/>
+  <rect x="400" y="130" width="400" height="25" rx="4" fill="#ffffff" opacity="0.15"/>
+  <rect x="500" y="190" width="200" height="45" rx="8" fill="#c9302c" opacity="0.8"/>
+  
+  <!-- Replace label -->
+  <rect x="850" y="110" width="280" height="80" rx="8" fill="#000000" opacity="0.4"/>
+  <text x="990" y="145" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="18" font-weight="600">PROMO BANNER</text>
+  <text x="990" y="170" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="12" opacity="0.8">1200 × 300px</text>
+</svg>

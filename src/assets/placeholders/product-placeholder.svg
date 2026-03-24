@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+  <defs>
+    <linearGradient id="prodBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f0"/>
+      <stop offset="100%" stop-color="#e8e8e0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#prodBg)"/>
+  
+  <!-- Jersey illustration -->
+  <g transform="translate(75, 80)">
+    <!-- Jersey body -->
+    <path d="M125 50 L175 80 L205 60 L245 80 L305 50 L330 110 L305 400 L205 440 L180 410 L155 440 L55 400 L30 110 Z" 
+          fill="#1a2744" stroke="#0f172a" stroke-width="2"/>
+    
+    <!-- Collar -->
+    <path d="M155 50 L180 80 L205 50" fill="none" stroke="#ffffff" stroke-width="3"/>
+    
+    <!-- Sleeve stripes -->
+    <rect x="40" y="100" width="45" height="8" fill="#c9302c"/>
+    <rect x="40" y="115" width="45" height="8" fill="#ffffff"/>
+    <rect x="275" y="100" width="45" height="8" fill="#c9302c"/>
+    <rect x="275" y="115" width="45" height="8" fill="#ffffff"/>
+    
+    <!-- Front design -->
+    <rect x="100" y="160" width="160" height="60" rx="4" fill="#c9302c" opacity="0.8"/>
+    <text x="180" y="200" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="24" font-weight="800">LOGO</text>
+    
+    <!-- Number -->
+    <text x="180" y="340" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="80" font-weight="900" opacity="0.9">10</text>
+  </g>
+  
+  <!-- Replace label -->
+  <rect x="100" y="440" width="200" height="40" rx="6" fill="#000000" opacity="0.5"/>
+  <text x="200" y="465" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="12" font-weight="500">Product Image • 400×500px</text>
+</svg>

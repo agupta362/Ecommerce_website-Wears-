@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2744"/>
+      <stop offset="50%" stop-color="#243554"/>
+      <stop offset="100%" stop-color="#1a2744"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c9302c"/>
+      <stop offset="100%" stop-color="#e6a82c"/>
+    </linearGradient>
+    <pattern id="gridPattern" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-width="0.3" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#heroBg)"/>
+  <rect width="1920" height="1080" fill="url(#gridPattern)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="1400" cy="400" r="300" fill="#c9302c" opacity="0.1"/>
+  <circle cx="1500" cy="600" r="200" fill="#e6a82c" opacity="0.08"/>
+  
+  <!-- Jersey silhouettes -->
+  <g transform="translate(1200, 200)" opacity="0.15">
+    <path d="M100 50 L150 80 L180 60 L220 80 L280 50 L300 100 L280 350 L200 380 L180 360 L160 380 L80 350 L60 100 Z" fill="#ffffff"/>
+  </g>
+  <g transform="translate(1350, 350)" opacity="0.1">
+    <path d="M80 40 L120 64 L144 48 L176 64 L224 40 L240 80 L224 280 L160 304 L144 288 L128 304 L64 280 L48 80 Z" fill="#ffffff"/>
+  </g>
+  
+  <!-- Placeholder text area -->
+  <rect x="100" y="300" width="600" height="40" rx="4" fill="#ffffff" opacity="0.2"/>
+  <rect x="100" y="360" width="500" height="80" rx="4" fill="#ffffff" opacity="0.15"/>
+  <rect x="100" y="460" width="400" height="20" rx="4" fill="#ffffff" opacity="0.1"/>
+  <rect x="100" y="490" width="350" height="20" rx="4" fill="#ffffff" opacity="0.1"/>
+  
+  <!-- CTA buttons placeholder -->
+  <rect x="100" y="560" width="180" height="50" rx="8" fill="#c9302c" opacity="0.8"/>
+  <rect x="300" y="560" width="160" height="50" rx="8" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Replace label -->
+  <rect x="760" y="480" width="400" height="120" rx="12" fill="#000000" opacity="0.5"/>
+  <text x="960" y="530" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="24" font-weight="600">HERO BANNER</text>
+  <text x="960" y="570" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="16" opacity="0.8">1920 × 1080px recommended</text>
+</svg>

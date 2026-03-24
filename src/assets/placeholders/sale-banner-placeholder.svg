@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" fill="none">
+  <defs>
+    <linearGradient id="saleBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9302c"/>
+      <stop offset="100%" stop-color="#1a2744"/>
+    </linearGradient>
+    <pattern id="stripes" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <rect width="20" height="40" fill="#ffffff" opacity="0.05"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#saleBg)"/>
+  <rect width="1200" height="400" fill="url(#stripes)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="200" r="180" fill="#ffffff" opacity="0.05"/>
+  <circle cx="1050" cy="200" r="150" fill="#e6a82c" opacity="0.1"/>
+  
+  <!-- Sale badge -->
+  <g transform="translate(100, 120)">
+    <rect width="200" height="160" rx="12" fill="#e6a82c"/>
+    <text x="100" y="80" text-anchor="middle" fill="#1a2744" font-family="system-ui" font-size="48" font-weight="800">SALE</text>
+    <text x="100" y="120" text-anchor="middle" fill="#1a2744" font-family="system-ui" font-size="28" font-weight="600">25% OFF</text>
+  </g>
+  
+  <!-- Text placeholders -->
+  <rect x="350" y="140" width="400" height="35" rx="4" fill="#ffffff" opacity="0.3"/>
+  <rect x="350" y="190" width="500" height="25" rx="4" fill="#ffffff" opacity="0.2"/>
+  <rect x="350" y="230" width="350" height="25" rx="4" fill="#ffffff" opacity="0.15"/>
+  
+  <!-- CTA button -->
+  <rect x="350" y="290" width="160" height="45" rx="8" fill="#e6a82c"/>
+  
+  <!-- Replace label -->
+  <rect x="750" y="150" width="350" height="100" rx="10" fill="#000000" opacity="0.4"/>
+  <text x="925" y="195" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="20" font-weight="600">SALE BANNER</text>
+  <text x="925" y="225" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="14" opacity="0.8">1200 × 400px</text>
+</svg>

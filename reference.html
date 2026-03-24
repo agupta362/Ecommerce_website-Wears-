@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>RETRO KIT NEPAL</title>
+
+    <link rel="stylesheet" href="/styles.css">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;0,800;0,900;1,900&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        .animate-on-scroll-hidden {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .animate-on-scroll-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <style type="text/tailwindcss">@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-stroke-black {
+    -webkit-text-stroke: 1px #0a0a0a;
+  }
+  .text-stroke-white {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  .text-stroke-lime {
+    -webkit-text-stroke: 1px #D2F800;
+  }
+  .writing-vertical-rl {
+    writing-mode: vertical-rl;
+  }
+}</style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = {
+            important: '#app-root',
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-lime': '#D2F800',
+                        'brand-sky': '#BDE0FE',
+                        'brand-black': '#0a0a0a',
+                        'brand-white': '#ffffff',
+                        'brand-gray': '#f5f5f5',
+                        'brand-primary': '#D2F800',
+                    },
+                    fontFamily: {
+                        'sans': ['Public Sans', 'sans-serif'],
+                        'mono': ['Space Mono', 'monospace'],
+                        'primary': ['Public Sans', 'sans-serif'],
+                        'secondary': ['Space Mono', 'monospace'],
+                    },
+                    boxShadow: {
+                        'brutal': '4px 4px 0px 0px rgba(10, 10, 10, 1)',
+                        'brutal-sm': '2px 2px 0px 0px rgba(10, 10, 10, 1)',
+                        'brutal-lg': '8px 8px 0px 0px rgba(10, 10, 10, 1)',
+                        'cta': '4px 4px 0px 0px rgba(10, 10, 10, 1)',
+                        'card': '8px 8px 0px 0px rgba(10, 10, 10, 1)',
+                    },
+                    animation: {
+                        'marquee-left': 'marquee-left 20s linear infinite',
+                        'marquee-reverse': 'marquee-reverse 20s linear infinite',
+                    },
+                    keyframes: {
+                        'marquee-left': {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        },
+                        'marquee-reverse': {
+                            '0%': { transform: 'translateX(-50%)' },
+                            '100%': { transform: 'translateX(0)' },
+                        }
+                    }
+                }
+            }
+        }</script>
+</head>
+
+<body id="app-root" class="font-sans text-brand-black bg-brand-white overflow-x-hidden">
+
+    <!-- Top Marquee -->
+    <div
+        class="bg-brand-lime text-brand-black overflow-hidden py-2 whitespace-nowrap relative border-b-2 border-brand-black z-50">
+        <div class="inline-block animate-marquee-left font-bold uppercase tracking-wider text-sm md:text-base"
+            data-pixel-id="g8pzq" data-pixel-kind="text">
+            <span class="mx-4">+++ LEGENDARY KITS • RETRO GLORY • FREE DELIVERY IN KATHMANDU +++</span>
+            <span class="mx-4">+++ LEGENDARY KITS • RETRO GLORY • FREE DELIVERY IN KATHMANDU +++</span>
+            <span class="mx-4">+++ LEGENDARY KITS • RETRO GLORY • FREE DELIVERY IN KATHMANDU +++</span>
+            <span class="mx-4">+++ LEGENDARY KITS • RETRO GLORY • FREE DELIVERY IN KATHMANDU +++</span>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-40 bg-brand-white border-b-2 border-brand-black">
+        <nav data-editable="header" class="max-w-[1920px] mx-auto flex justify-between items-center h-16 pl-6 pr-2">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-2" data-pixel-id="1hq9v" data-pixel-kind="link">
+                <div class="w-8 h-8 bg-brand-black rounded-full flex items-center justify-center text-brand-white">
+                    <i data-lucide="trophy" class="w-4 h-4 fill-white"></i>
+                </div>
+                <span data-editable="text" data-path="header.logo"
+                    class="text-2xl font-black tracking-tighter uppercase italic">RETRO KIT NEPAL</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center h-full" data-pixel-id="po770" data-pixel-kind="text">
+                <a href="#"
+                    class="h-full flex items-center px-6 hover:bg-brand-lime border-l-2 border-brand-black font-bold text-sm uppercase transition-colors"
+                    data-pixel-id="igpnb" data-pixel-kind="link">Shop</a>
+                <a href="#"
+                    class="h-full flex items-center px-6 hover:bg-brand-lime border-l-2 border-brand-black font-bold text-sm uppercase transition-colors"
+                    data-pixel-id="z07ls" data-pixel-kind="link">Legends Vault</a>
+                <a href="#"
+                    class="h-full flex items-center px-6 hover:bg-brand-lime border-l-2 border-brand-black font-bold text-sm uppercase transition-colors"
+                    data-pixel-id="n660v" data-pixel-kind="link">New Arrivals</a>
+                <a href="#"
+                    class="h-full flex items-center px-6 hover:bg-brand-lime border-l-2 border-brand-black font-bold text-sm uppercase transition-colors"
+                    data-pixel-id="fw8qi" data-pixel-kind="link">Sale</a>
+                <button
+                    class="h-full bg-brand-black text-brand-white px-8 font-bold uppercase hover:bg-brand-lime hover:text-brand-black transition-colors border-l-2 border-brand-black ml-0">
+                    Shop All Kits
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-toggle" class="md:hidden p-4">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-brand-white border-b-2 border-brand-black absolute w-full left-0 top-16 shadow-brutal-lg z-40"
+            data-pixel-id="pad5r" data-pixel-kind="text">
+            <a href="#" class="block p-4 border-t border-brand-gray font-bold uppercase hover:bg-brand-lime"
+                data-pixel-id="iamkt" data-pixel-kind="link">Shop</a>
+            <a href="#" class="block p-4 border-t border-brand-gray font-bold uppercase hover:bg-brand-lime"
+                data-pixel-id="o5far" data-pixel-kind="link">Vault</a>
+            <a href="#" class="block p-4 border-t border-brand-gray font-bold uppercase hover:bg-brand-lime"
+                data-pixel-id="vxteb" data-pixel-kind="link">New</a>
+            <a href="#" class="block p-4 border-t border-brand-gray font-bold uppercase hover:bg-brand-lime"
+                data-pixel-id="bbr0h" data-pixel-kind="link">Sale</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative border-b-2 border-brand-black overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 z-0 opacity-10 pointer-events-none"
+                style="background-image: url('https://images.pexels.com/photos/7545413/pexels-photo-7545413.jpeg?w=1920&amp;fit=crop'); background-size: cover; background-position: center;"
+                data-pixel-verified="true" data-pixel-id="gt0r6" data-pixel-kind="background">
+            </div>
+
+            <div class="max-w-[1920px] mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[700px] relative z-10">
+
+                <!-- Left: Content Block -->
+                <div class="p-8 md:p-16 flex flex-col justify-center border-r-2 border-brand-black bg-white/90 backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-none"
+                    data-animation-on-scroll="">
+                    <div class="inline-block bg-brand-black text-brand-lime px-3 py-1 font-mono text-sm uppercase tracking-tighter mb-6 w-fit transform -rotate-2 shadow-brutal-sm"
+                        data-pixel-id="t0uyv" data-pixel-kind="text">
+                        Nepal's #1 Retro Store
+                    </div>
+
+                    <h1 class="text-6xl md:text-8xl font-black leading-[0.85] mb-8 uppercase tracking-tighter italic"
+                        data-pixel-id="7k8tt" data-pixel-kind="text">
+                        Relive The <br>
+                        <span class="text-transparent text-stroke-black">Glory Days</span>
+                    </h1>
+
+                    <p class="text-lg md:text-xl font-mono text-brand-black mb-10 max-w-lg leading-tight uppercase font-bold"
+                        data-pixel-id="4sryd" data-pixel-kind="text">
+                        Authentic retro football jerseys from the greatest clubs and eras. Premium quality replicas,
+                        delivered to your door.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 relative z-20" data-pixel-id="smjsz" data-pixel-kind="text">
+                        <a href="#"
+                            class="bg-brand-black text-brand-white px-10 py-5 font-black uppercase tracking-widest hover:bg-brand-lime hover:text-brand-black transition-all border-2 border-brand-black shadow-brutal hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-brutal-sm"
+                            data-pixel-id="d7my2" data-pixel-kind="link">
+                            Shop Collection
+                        </a>
+                        <a href="#"
+                            class="bg-white text-brand-black px-10 py-5 font-black uppercase tracking-widest hover:bg-brand-black hover:text-brand-white transition-all border-2 border-brand-black shadow-brutal hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-brutal-sm"
+                            data-pixel-id="asu00" data-pixel-kind="link">
+                            New Arrivals
+                        </a>
+                    </div>
+
+                    <div class="mt-12 flex items-center gap-8 border-t-2 border-brand-black pt-8">
+                        <div class="flex flex-col" data-pixel-id="kq6px" data-pixel-kind="text">
+                            <span class="text-3xl font-black">500+</span>
+                            <span class="text-xs font-mono uppercase font-bold opacity-60">Jersey Styles</span>
+                        </div>
+                        <div class="flex flex-col" data-pixel-id="5locf" data-pixel-kind="text">
+                            <span class="text-3xl font-black">2024</span>
+                            <span class="text-xs font-mono uppercase font-bold opacity-60">Since Founding</span>
+                        </div>
+                        <div class="flex flex-col" data-pixel-id="4gpti" data-pixel-kind="text">
+                            <span class="text-3xl font-black">100%</span>
+                            <span class="text-xs font-mono uppercase font-bold opacity-60">Authentic Look</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Visual Block -->
+                <div class="relative flex items-center justify-center min-h-[500px] bg-brand-lime/20 overflow-hidden"
+                    data-animation-on-scroll="">
+                    <!-- Big Rotated Label -->
+                    <h2 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[18vw] font-black text-white/40 select-none italic -rotate-12 pointer-events-none whitespace-nowrap uppercase tracking-tighter"
+                        data-pixel-id="37rdh" data-pixel-kind="text">
+                        LEGENDS
+                    </h2>
+
+                    <!-- Main Showcase Kit -->
+                    <div
+                        class="relative w-full max-w-lg mx-auto transform hover:scale-105 transition-transform duration-500 p-6 drop-shadow-2xl">
+                        <!-- Using Placeholder for specific kit based on Italy/Inter vibes from content -->
+                        <img src="https://images.pexels.com/photos/35861287/pexels-photo-35861287.jpeg?w=800&amp;h=1000&amp;fit=crop"
+                            alt="Inter Milan 2010 Kit"
+                            class="w-full h-auto border-4 border-brand-black shadow-brutal-lg rotate-3 bg-white"
+                            data-pixel-verified="true" data-pixel-id="nulvy" data-pixel-kind="image">
+
+                        <!-- Hotspots/Tags -->
+                        <div class="absolute -top-10 -right-4 bg-brand-lime border-2 border-brand-black p-4 shadow-brutal rotate-6"
+                            data-pixel-id="6m5n2" data-pixel-kind="text">
+                            <span class="block text-xs font-mono font-bold uppercase">Featured Item</span>
+                            <span class="block text-2xl font-black italic uppercase leading-none">Inter '10</span>
+                        </div>
+
+                        <div class="absolute bottom-10 -left-10 bg-white border-2 border-brand-black p-4 shadow-brutal -rotate-3 hidden md:block"
+                            data-pixel-id="g2kzk" data-pixel-kind="text">
+                            <span class="block text-xs font-mono font-bold uppercase">Retro Quality</span>
+                            <span class="block text-xl font-black uppercase">Stitched Crests</span>
+                        </div>
+                    </div>
+
+                    <!-- Scroll Button -->
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center">
+                        <span class="text-[10px] font-black uppercase tracking-[0.5em] mb-2" data-pixel-id="a7c9f"
+                            data-pixel-kind="text">Scroll</span>
+                        <div class="w-1 h-12 bg-brand-black/20 relative overflow-hidden">
+                            <div class="absolute top-0 left-0 w-full h-1/2 bg-brand-black animate-bounce"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Bar / Feature Icons -->
+        <section class="border-b-2 border-brand-black bg-white py-8">
+            <div class="max-w-[1920px] mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex items-center gap-4 group" data-animation-on-scroll="">
+                    <div
+                        class="w-12 h-12 bg-brand-lime border-2 border-brand-black flex items-center justify-center shadow-brutal-sm group-hover:scale-110 transition-transform">
+                        <i data-lucide="truck" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-black uppercase text-xs" data-pixel-id="phri3" data-pixel-kind="text">Free
+                            Delivery</h4>
+                        <p class="font-mono text-[10px] text-gray-500 uppercase" data-pixel-id="ev393"
+                            data-pixel-kind="text">Within Kathmandu Valley</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 group" data-animation-on-scroll="">
+                    <div
+                        class="w-12 h-12 bg-brand-lime border-2 border-brand-black flex items-center justify-center shadow-brutal-sm group-hover:scale-110 transition-transform">
+                        <i data-lucide="banknote" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-black uppercase text-xs" data-pixel-id="kqniu" data-pixel-kind="text">Cash on
+                            Delivery</h4>
+                        <p class="font-mono text-[10px] text-gray-500 uppercase" data-pixel-id="ash2o"
+                            data-pixel-kind="text">Pay at your doorstep</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 group" data-animation-on-scroll="">
+                    <div
+                        class="w-12 h-12 bg-brand-lime border-2 border-brand-black flex items-center justify-center shadow-brutal-sm group-hover:scale-110 transition-transform">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-black uppercase text-xs" data-pixel-id="xpjho" data-pixel-kind="text">Authentic
+                            Replicas</h4>
+                        <p class="font-mono text-[10px] text-gray-500 uppercase" data-pixel-id="meb1q"
+                            data-pixel-kind="text">Premium Retro Quality</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 group" data-animation-on-scroll="">
+                    <div
+                        class="w-12 h-12 bg-brand-lime border-2 border-brand-black flex items-center justify-center shadow-brutal-sm group-hover:scale-110 transition-transform">
+                        <i data-lucide="rotate-ccw" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-black uppercase text-xs" data-pixel-id="pzuqq" data-pixel-kind="text">Easy
+                            Returns</h4>
+                        <p class="font-mono text-[10px] text-gray-500 uppercase" data-pixel-id="442x1"
+                            data-pixel-kind="text">7-Day Return Policy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop By Your Own Choice of category -->
+        <section class="py-24 border-b-2 border-brand-black bg-brand-gray">
+            <div class="max-w-[1920px] mx-auto px-6">
+                <div class="mb-16 text-center" data-animation-on-scroll="">
+                    <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4 italic"
+                        data-pixel-id="i5onr" data-pixel-kind="text">Find It Fast>></h2>
+                    <p class="font-mono uppercase text-sm font-bold" data-pixel-id="w2ldn" data-pixel-kind="text">
+                        Explore</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- League 1 -->
+                    <a href="#"
+                        class="group relative h-96 border-2 border-brand-black overflow-hidden shadow-brutal hover:shadow-brutal-lg transition-all"
+                        data-animation-on-scroll="" data-pixel-id="wjua8" data-pixel-kind="link">
+                        <img src="https://images.pexels.com/photos/25786050/pexels-photo-25786050.jpeg?w=800&amp;fit=crop"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                            alt="Serie A" data-pixel-verified="true" data-pixel-id="zwpyf" data-pixel-kind="image">
+                        <div class="absolute inset-0 bg-brand-black/40 group-hover:bg-brand-black/20 transition-colors">
+                        </div>
+                        <div class="absolute bottom-6 left-6">
+                            <h3 class="text-4xl font-black text-brand-lime uppercase italic leading-none transform group-hover:-translate-y-2 transition-transform"
+                                data-pixel-id="j8kdv" data-pixel-kind="text">Serie A</h3>
+                            <p class="text-white font-mono text-xs uppercase tracking-widest mt-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                                data-pixel-id="qnuan" data-pixel-kind="text">Legendary Italian kits</p>
+                        </div>
+                        <div
+                            class="absolute top-6 right-6 w-12 h-12 bg-white border-2 border-brand-black rounded-full flex items-center justify-center transform group-hover:rotate-45 transition-transform">
+                            <i data-lucide="arrow-up-right" class="w-6 h-6"></i>
+                        </div>
+                    </a>
+                    <!-- League 2 -->
+                    <a href="#"
+                        class="group relative h-96 border-2 border-brand-black overflow-hidden shadow-brutal hover:shadow-brutal-lg transition-all"
+                        data-animation-on-scroll="" data-pixel-id="9jjbs" data-pixel-kind="link">
+                        <img src="https://images.pexels.com/photos/17160682/pexels-photo-17160682.jpeg?w=800&amp;fit=crop"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                            alt="Premier League" data-pixel-verified="true" data-pixel-id="lu0ga"
+                            data-pixel-kind="image">
+                        <div class="absolute inset-0 bg-brand-black/40 group-hover:bg-brand-black/20 transition-colors">
+                        </div>
+                        <div class="absolute bottom-6 left-6">
+                            <h3 class="text-4xl font-black text-brand-lime uppercase italic leading-none transform group-hover:-translate-y-2 transition-transform"
+                                data-pixel-id="czld9" data-pixel-kind="text">Premier League</h3>
+                            <p class="text-white font-mono text-xs uppercase tracking-widest mt-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                                data-pixel-id="19tfk" data-pixel-kind="text">English football heritage</p>
+                        </div>
+                        <div
+                            class="absolute top-6 right-6 w-12 h-12 bg-white border-2 border-brand-black rounded-full flex items-center justify-center transform group-hover:rotate-45 transition-transform">
+                            <i data-lucide="arrow-up-right" class="w-6 h-6"></i>
+                        </div>
+                    </a>
+                    <!-- League 3 -->
+                    <a href="#"
+                        class="group relative h-96 border-2 border-brand-black overflow-hidden shadow-brutal hover:shadow-brutal-lg transition-all"
+                        data-animation-on-scroll="" data-pixel-id="33rrm" data-pixel-kind="link">
+                        <img src="https://images.pexels.com/photos/12313588/pexels-photo-12313588.jpeg?w=800&amp;fit=crop"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                            alt="La Liga" data-pixel-verified="true" data-pixel-id="no3rs" data-pixel-kind="image">
+                        <div class="absolute inset-0 bg-brand-black/40 group-hover:bg-brand-black/20 transition-colors">
+                        </div>
+                        <div class="absolute bottom-6 left-6">
+                            <h3 class="text-4xl font-black text-brand-lime uppercase italic leading-none transform group-hover:-translate-y-2 transition-transform"
+                                data-pixel-id="132ep" data-pixel-kind="text">La Liga</h3>
+                            <p class="text-white font-mono text-xs uppercase tracking-widest mt-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                                data-pixel-id="ce9jc" data-pixel-kind="text">Spanish vintage classics</p>
+                        </div>
+                        <div
+                            class="absolute top-6 right-6 w-12 h-12 bg-white border-2 border-brand-black rounded-full flex items-center justify-center transform group-hover:rotate-45 transition-transform">
+                            <i data-lucide="arrow-up-right" class="w-6 h-6"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limited Drops Grid -->
+        <section class="py-24 border-b-2 border-brand-black bg-white overflow-hidden">
+            <div class="max-w-[1920px] mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4"
+                    data-animation-on-scroll="">
+                    <div>
+                        <span
+                            class="bg-brand-black text-brand-lime px-2 py-1 text-xs font-mono uppercase font-bold transform -rotate-2 inline-block mb-4"
+                            data-pixel-id="7omih" data-pixel-kind="text">Limited Drops</span>
+                        <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none italic"
+                            data-pixel-id="dv3h5" data-pixel-kind="text">
+                            Exclusive <br><span class="text-stroke-black text-transparent">Releases</span>
+                        </h2>
+                    </div>
+                    <a href="#"
+                        class="bg-brand-black text-white border-2 border-brand-black px-8 py-4 font-bold uppercase text-sm hover:bg-brand-lime hover:text-brand-black transition-colors shadow-brutal"
+                        data-pixel-id="86rfm" data-pixel-kind="link">View All Drops</a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Product 1: Parma -->
+                    <div class="group" data-animation-on-scroll="">
+                        <div
+                            class="relative bg-white border-2 border-brand-black mb-4 overflow-hidden aspect-[3/4] shadow-brutal group-hover:shadow-brutal-lg transition-all duration-300">
+                            <span
+                                class="absolute top-4 left-4 bg-brand-lime border-2 border-brand-black px-3 py-1 text-xs font-black z-10 uppercase"
+                                data-pixel-id="c1ap7" data-pixel-kind="text">-20% NEW</span>
+                            <img src="https://images.pexels.com/photos/1594911/pexels-photo-1594911.jpeg?w=800&amp;fit=crop"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                data-pixel-id="t93cv" data-pixel-kind="image">
+                            <div
+                                class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-brand-black/90 text-white backdrop-blur-sm">
+                                <div class="flex flex-wrap gap-2 mb-3" data-pixel-id="3168l" data-pixel-kind="text">
+                                    <span
+                                        class="w-8 h-8 flex items-center justify-center border border-white/30 text-xs font-mono hover:bg-white hover:text-black cursor-pointer">S</span>
+                                    <span
+                                        class="w-8 h-8 flex items-center justify-center border border-white/30 text-xs font-mono hover:bg-white hover:text-black cursor-pointer">M</span>
+                                    <span
+                                        class="w-8 h-8 flex items-center justify-center border border-white/30 text-xs font-mono hover:bg-white hover:text-black cursor-pointer">XL</span>
+                                </div>
+                                <button
+                                    class="w-full bg-brand-lime text-brand-black py-2 font-black uppercase text-xs flex items-center justify-center gap-2"
+                                    data-pixel-id="qsymf" data-pixel-kind="text">
+                                    Quick Add <i data-lucide="shopping-cart" class="w-3 h-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-mono font-black uppercase text-gray-400 mb-1 tracking-widest"
+                                data-pixel-id="y6uif" data-pixel-kind="text">Parma Calcio</p>
+                            <h3 class="font-black uppercase text-xl leading-tight" data-pixel-id="rxnw6"
+                                data-pixel-kind="text">1999-00 Away Kit</h3>
+                            <div class="flex items-center gap-3 mt-2" data-pixel-id="zveq5" data-pixel-kind="text">
+                                <span class="font-black text-lg">Rs. 1,600</span>
+                                <span class="text-sm text-gray-400 line-through">Rs. 2,000</span>
+                            </div>
+                            <p class="text-[10px] font-mono font-bold text-red-500 uppercase mt-2" data-pixel-id="6roaf"
+                                data-pixel-kind="text">Only 1 left!</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: Germany -->
+                    <div class="group" data-animation-on-scroll="">
+                        <div
+                            class="relative bg-white border-2 border-brand-black mb-4 overflow-hidden aspect-[3/4] shadow-brutal group-hover:shadow-brutal-lg transition-all duration-300">
+                            <span
+                                class="absolute top-4 left-4 bg-brand-black text-brand-lime border-2 border-brand-lime px-3 py-1 text-xs font-black z-10 uppercase"
+                                data-pixel-id="z2fte" data-pixel-kind="text">LIMITED</span>
+                            <img src="https://images.pexels.com/photos/159515/football-footballer-soccer-sport-159515.jpeg?w=800&amp;fit=crop"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                data-pixel-id="kz2iy" data-pixel-kind="image">
+                            <div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-brand-black/90 text-white backdrop-blur-sm"
+                                data-pixel-id="puqra" data-pixel-kind="text">
+                                <button
+                                    class="w-full bg-brand-lime text-brand-black py-2 font-black uppercase text-xs">Quick
+                                    Add</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-mono font-black uppercase text-gray-400 mb-1 tracking-widest"
+                                data-pixel-id="eyp0y" data-pixel-kind="text">Germany</p>
+                            <h3 class="font-black uppercase text-xl leading-tight" data-pixel-id="ono1u"
+                                data-pixel-kind="text">Beckenbauer Tribute</h3>
+                            <div class="flex items-center gap-3 mt-2" data-pixel-id="jdw99" data-pixel-kind="text">
+                                <span class="font-black text-lg">Rs. 1,600</span>
+                                <span class="text-sm text-gray-400 line-through">Rs. 2,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: France -->
+                    <div class="group opacity-75" data-animation-on-scroll="">
+                        <div
+                            class="relative bg-white border-2 border-brand-black mb-4 overflow-hidden aspect-[3/4] shadow-brutal">
+                            <div class="absolute inset-0 bg-brand-black/60 z-20 flex items-center justify-center"
+                                data-pixel-id="dhf44" data-pixel-kind="text">
+                                <span
+                                    class="text-white font-black uppercase text-2xl rotate-[-15deg] border-4 border-white px-4">Out
+                                    of Stock</span>
+                            </div>
+                            <img src="https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?w=800&amp;fit=crop"
+                                class="w-full h-full object-cover" data-pixel-id="1yny9" data-pixel-kind="image">
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-mono font-black uppercase text-gray-400 mb-1 tracking-widest"
+                                data-pixel-id="rftlm" data-pixel-kind="text">France</p>
+                            <h3 class="font-black uppercase text-xl leading-tight opacity-50" data-pixel-id="1doc4"
+                                data-pixel-kind="text">1998 WC Zidane Away</h3>
+                            <div class="flex items-center gap-3 mt-2" data-pixel-id="aws0l" data-pixel-kind="text">
+                                <span class="font-black text-lg text-gray-400">Rs. 1,600</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4: Inter -->
+                    <div class="group" data-animation-on-scroll="">
+                        <div
+                            class="relative bg-white border-2 border-brand-black mb-4 overflow-hidden aspect-[3/4] shadow-brutal group-hover:shadow-brutal-lg transition-all duration-300">
+                            <span
+                                class="absolute top-4 left-4 bg-brand-lime border-2 border-brand-black px-3 py-1 text-xs font-black z-10 uppercase"
+                                data-pixel-id="794nr" data-pixel-kind="text">HOT</span>
+                            <img src="https://images.pexels.com/photos/2091497/pexels-photo-2091497.jpeg?w=800&amp;fit=crop"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                data-pixel-id="urcuy" data-pixel-kind="image">
+                            <div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-brand-black/90 text-white backdrop-blur-sm"
+                                data-pixel-id="ugwmy" data-pixel-kind="text">
+                                <button
+                                    class="w-full bg-brand-lime text-brand-black py-2 font-black uppercase text-xs">Quick
+                                    Add</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-mono font-black uppercase text-gray-400 mb-1 tracking-widest"
+                                data-pixel-id="m824i" data-pixel-kind="text">Inter Milan</p>
+                            <h3 class="font-black uppercase text-xl leading-tight" data-pixel-id="ngcph"
+                                data-pixel-kind="text">2010-11 Home Kit</h3>
+                            <div class="flex items-center gap-3 mt-2" data-pixel-id="f5mdk" data-pixel-kind="text">
+                                <span class="font-black text-lg">Rs. 1,600</span>
+                                <span class="text-sm text-gray-400 line-through">Rs. 2,000</span>
+                            </div>
+                            <p class="text-[10px] font-mono font-bold text-orange-500 uppercase mt-2"
+                                data-pixel-id="swdt8" data-pixel-kind="text">Only 3 left!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Champions Sale Banner -->
+        <section class="bg-brand-black py-20 relative overflow-hidden border-b-2 border-brand-black">
+            <div class="absolute top-0 right-0 w-full h-full pointer-events-none opacity-20">
+                <h2 class="text-[30vw] font-black text-white italic whitespace-nowrap -rotate-12 translate-y-10"
+                    data-pixel-id="nzn4a" data-pixel-kind="text">SALE SALE SALE</h2>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10 text-center" data-animation-on-scroll="">
+                <span class="inline-block bg-brand-lime px-4 py-2 font-black uppercase tracking-widest mb-6"
+                    data-pixel-id="63rnw" data-pixel-kind="text">Limited Time Offer</span>
+                <h2 class="text-6xl md:text-9xl font-black text-white uppercase tracking-tighter italic mb-8"
+                    data-pixel-id="4uirr" data-pixel-kind="text">Champions Sale</h2>
+                <p class="text-brand-lime font-mono text-xl md:text-2xl uppercase font-bold mb-12" data-pixel-id="jzl5x"
+                    data-pixel-kind="text">Up to 25% OFF on selected classic jerseys. Gear up with legends.</p>
+                <a href="#"
+                    class="bg-brand-lime text-brand-black px-12 py-5 font-black uppercase tracking-widest text-lg hover:bg-white transition-colors border-2 border-white shadow-[8px_8px_0px_0px_#ffffff]"
+                    data-pixel-id="9404y" data-pixel-kind="link">
+                    Shop the Sale
+                </a>
+            </div>
+        </section>
+
+        <!-- Why Retro Kit Nepal? -->
+        <section class="py-24 bg-white border-b-2 border-brand-black overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div data-animation-on-scroll="">
+                        <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8 leading-[0.9]"
+                            data-pixel-id="21500" data-pixel-kind="text">Why Retro <br>Kit Nepal?</h2>
+                        <p class="font-mono text-lg text-gray-600 mb-12 uppercase leading-relaxed font-bold"
+                            data-pixel-id="wc50e" data-pixel-kind="text">We're passionate about football history and
+                            bringing you the best retro kits in Nepal. Here's why the squad trusts us.</p>
+
+                        <div class="space-y-10">
+                            <div class="flex gap-6">
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 bg-brand-lime border-2 border-brand-black flex items-center justify-center text-4xl shadow-brutal-sm group-hover:rotate-6">
+                                    ✨</div>
+                                <div>
+                                    <h3 class="text-2xl font-black uppercase italic mb-2" data-pixel-id="b8ewo"
+                                        data-pixel-kind="text">Quality Guaranteed</h3>
+                                    <p class="text-sm font-mono text-gray-500 uppercase" data-pixel-id="ta3dd"
+                                        data-pixel-kind="text">Premium quality replicas with attention to every
+                                        detail—stitching, badges, and fabric.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div class="flex-shrink-0 w-16 h-16 bg-brand-black border-2 border-brand-lime text-brand-lime flex items-center justify-center text-4xl shadow-brutal-sm"
+                                    data-pixel-id="84tgk" data-pixel-kind="text">🇳🇵</div>
+                                <div>
+                                    <h3 class="text-2xl font-black uppercase italic mb-2" data-pixel-id="peqij"
+                                        data-pixel-kind="text">Nationwide Delivery</h3>
+                                    <p class="text-sm font-mono text-gray-500 uppercase" data-pixel-id="pg8pj"
+                                        data-pixel-kind="text">We deliver across Nepal. Free delivery in Kathmandu
+                                        Valley on orders above Rs. 3,000.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div class="flex-shrink-0 w-16 h-16 bg-brand-white border-2 border-brand-black flex items-center justify-center text-4xl shadow-brutal-sm"
+                                    data-pixel-id="ova7a" data-pixel-kind="text">💳</div>
+                                <div>
+                                    <h3 class="text-2xl font-black uppercase italic mb-2" data-pixel-id="vfc7r"
+                                        data-pixel-kind="text">Easy Payments</h3>
+                                    <p class="text-sm font-mono text-gray-500 uppercase" data-pixel-id="zp46q"
+                                        data-pixel-kind="text">Cash on Delivery, eSewa, Khalti, or bank transfer. Pay
+                                        the way you prefer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative" data-animation-on-scroll="">
+                        <div
+                            class="relative z-10 border-4 border-brand-black shadow-brutal-lg rotate-3 overflow-hidden">
+                            <img src="https://images.pexels.com/photos/9875733/pexels-photo-9875733.jpeg?w=800&amp;fit=crop"
+                                class="w-full h-auto" alt="Quality Details" data-pixel-verified="true"
+                                data-pixel-id="9r5f0" data-pixel-kind="image">
+                        </div>
+                        <!-- Decorative elements -->
+                        <div
+                            class="absolute -top-10 -right-10 w-40 h-40 bg-brand-lime border-2 border-brand-black rounded-full -z-10 animate-pulse">
+                        </div>
+                        <div class="absolute -bottom-10 -left-10 w-64 h-24 bg-brand-black -z-10 rotate-12"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Follow Us on Instagram -->
+        <section class="py-24 border-b-2 border-brand-black bg-brand-lime">
+            <div class="max-w-[1920px] mx-auto px-6 text-center">
+                <div class="mb-12" data-animation-on-scroll="">
+                    <i data-lucide="instagram" class="w-12 h-12 mx-auto mb-6"></i>
+                    <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4 italic"
+                        data-pixel-id="h4ear" data-pixel-kind="text">@retrokitnepal</h2>
+                    <p class="font-mono text-sm font-black uppercase mb-8" data-pixel-id="8k30c" data-pixel-kind="text">
+                        Join our community of football kit enthusiasts</p>
+                    <a href="https://instagram.com/retrokitnepal" target="_blank"
+                        class="bg-brand-black text-brand-lime px-10 py-4 font-black uppercase tracking-widest text-sm hover:bg-white hover:text-brand-black transition-all border-2 border-brand-black shadow-brutal"
+                        data-pixel-id="i78pt" data-pixel-kind="link">
+                        Follow The Squad
+                    </a>
+                </div>
+
+                <!-- Instagram Feed Mockup -->
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4" data-animation-on-scroll="">
+                    <div
+                        class="aspect-square border-2 border-brand-black overflow-hidden hover:scale-105 transition-transform">
+                        <img src="https://images.pexels.com/photos/15986812/pexels-photo-15986812.jpeg?w=400&amp;fit=crop"
+                            class="w-full h-full object-cover" data-pixel-verified="true" data-pixel-id="gdh0b"
+                            data-pixel-kind="image">
+                    </div>
+                    <div
+                        class="aspect-square border-2 border-brand-black overflow-hidden hover:scale-105 transition-transform">
+                        <img src="https://images.pexels.com/photos/13311973/pexels-photo-13311973.jpeg?w=400&amp;fit=crop"
+                            class="w-full h-full object-cover" data-pixel-verified="true" data-pixel-id="naai6"
+                            data-pixel-kind="image">
+                    </div>
+                    <div
+                        class="aspect-square border-2 border-brand-black overflow-hidden hover:scale-105 transition-transform">
+                        <img src="https://images.pexels.com/photos/12496002/pexels-photo-12496002.jpeg?w=400&amp;fit=crop"
+                            class="w-full h-full object-cover" data-pixel-verified="true" data-pixel-id="dukqv"
+                            data-pixel-kind="image">
+                    </div>
+                    <div
+                        class="aspect-square border-2 border-brand-black overflow-hidden hover:scale-105 transition-transform">
+                        <img src="https://images.pexels.com/photos/13094233/pexels-photo-13094233.jpeg?w=400&amp;fit=crop"
+                            class="w-full h-full object-cover" data-pixel-verified="true" data-pixel-id="gict7"
+                            data-pixel-kind="image">
+                    </div>
+                    <div
+                        class="aspect-square border-2 border-brand-black overflow-hidden md:hidden lg:block hover:scale-105 transition-transform">
+                        <img src="https://images.pexels.com/photos/12496002/pexels-photo-12496002.jpeg?w=400&amp;fit=crop"
+                            class="w-full h-full object-cover" data-pixel-verified="true" data-pixel-id="uiq36"
+                            data-pixel-kind="image">
+                    </div>
+                    <div
+                        class="aspect-square border-2 border-brand-black overflow-hidden md:hidden lg:block hover:scale-105 transition-transform">
+                        <img src="https://images.pexels.com/photos/1003869/pexels-photo-1003869.jpeg?w=400&amp;fit=crop"
+                            class="w-full h-full object-cover" data-pixel-verified="true" data-pixel-id="2f4r3"
+                            data-pixel-kind="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / Newsletter CTA -->
+        <section class="py-24 bg-white px-6">
+            <div
+                class="max-w-7xl mx-auto border-4 border-brand-black p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center bg-brand-white shadow-brutal-lg">
+                <div class="md:w-1/2" data-animation-on-scroll="">
+                    <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter italic mb-4"
+                        data-pixel-id="o5wbu" data-pixel-kind="text">Join The <br>Glory Club</h2>
+                    <p class="font-mono text-sm text-gray-500 uppercase mb-8" data-pixel-id="ah69g"
+                        data-pixel-kind="text">Subscribe for exclusive drops, deals, and retro football stories
+                        delivered straight to your inbox.</p>
+                    <div class="flex flex-col sm:flex-row gap-4" data-pixel-id="ykf42" data-pixel-kind="text">
+                        <input type="email" placeholder="ENTER YOUR EMAIL"
+                            class="flex-grow border-2 border-brand-black p-4 bg-white font-mono text-sm focus:outline-none focus:ring-4 focus:ring-brand-lime">
+                        <button
+                            class="bg-brand-black text-white px-8 py-4 font-black uppercase text-sm border-2 border-brand-black hover:bg-brand-lime hover:text-brand-black transition-all">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-4" data-animation-on-scroll="">
+                    <div class="border-2 border-brand-black p-4 text-center hover:bg-brand-gray transition-colors"
+                        data-pixel-id="nbqqi" data-pixel-kind="text">
+                        <i data-lucide="phone-call" class="w-8 h-8 mx-auto mb-2 text-brand-black"></i>
+                        <span class="block text-xs font-black uppercase">+977 9866115154</span>
+                        <span class="block text-[8px] font-mono text-gray-400">WHATSAPP SUPPORT</span>
+                    </div>
+                    <div class="border-2 border-brand-black p-4 text-center hover:bg-brand-gray transition-colors"
+                        data-pixel-id="18vfu" data-pixel-kind="text">
+                        <i data-lucide="mail" class="w-8 h-8 mx-auto mb-2 text-brand-black"></i>
+                        <span class="block text-xs font-black uppercase">retrokitnepal@gmail.com</span>
+                        <span class="block text-[8px] font-mono text-gray-400">EMAIL ENQUIRIES</span>
+                    </div>
+                    <div class="border-2 border-brand-black p-4 text-center hover:bg-brand-gray transition-colors col-span-2"
+                        data-pixel-id="0b1sp" data-pixel-kind="text">
+                        <i data-lucide="map-pin" class="w-8 h-8 mx-auto mb-2 text-brand-black"></i>
+                        <span class="block text-xs font-black uppercase">Bharatpur, Chitwan, Nepal</span>
+                        <span class="block text-[8px] font-mono text-gray-400">HEAD OFFICE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Specialized logic for local page interactions
+            document.addEventListener('DOMContentLoaded', () => {
+                // Scroll handling for floating elements if needed
+            });
+        </script>
+    </main>
+
+    <footer class="bg-brand-black text-brand-lime py-12 border-t-2 border-white">
+        <div class="max-w-[1920px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="w-8 h-8 bg-brand-lime rounded-full flex items-center justify-center text-brand-black">
+                        <i data-lucide="trophy" class="w-4 h-4 fill-black"></i>
+                    </div>
+                    <span class="text-2xl font-black tracking-tighter uppercase italic text-white" data-pixel-id="dqupq"
+                        data-pixel-kind="text">RETRO KIT NEPAL</span>
+                </div>
+                <p class="text-sm text-gray-400 font-mono" data-pixel-id="79tpt" data-pixel-kind="text">
+                    © 2026 Retro Kit Nepal.<br>
+                    Relive the Glory Days.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="font-bold uppercase text-white mb-4" data-pixel-id="mrf92" data-pixel-kind="text">Quick Links
+                </h4>
+                <ul class="space-y-2 text-sm text-gray-400 font-mono">
+                    <li class="hover:text-brand-lime cursor-pointer" data-pixel-id="lpmpo" data-pixel-kind="text">Shop
+                        All</li>
+                    <li class="hover:text-brand-lime cursor-pointer" data-pixel-id="nhqi8" data-pixel-kind="text">New
+                        Arrivals</li>
+                    <li class="hover:text-brand-lime cursor-pointer" data-pixel-id="m8b7x" data-pixel-kind="text">Size
+                        Guide</li>
+                    <li class="hover:text-brand-lime cursor-pointer" data-pixel-id="orgqb" data-pixel-kind="text">Bulk
+                        Orders</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold uppercase text-white mb-4" data-pixel-id="97ndq" data-pixel-kind="text">Support
+                </h4>
+                <ul class="space-y-2 text-sm text-gray-400 font-mono">
+                    <li class="hover:text-brand-lime cursor-pointer" data-pixel-id="skf9e" data-pixel-kind="text">FAQ
+                    </li>
+                    <li class="hover:text-brand-lime cursor-pointer" data-pixel-id="aex71" data-pixel-kind="text">
+                        Shipping</li>
+                    <li class="hover:text-brand-lime cursor-pointer" data-pixel-id="ok9j3" data-pixel-kind="text">
+                        Returns</li>
+                    <li class="hover:text-brand-lime cursor-pointer" data-pixel-id="n6afq" data-pixel-kind="text">
+                        Contact Us</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold uppercase text-white mb-4" data-pixel-id="5s0rk" data-pixel-kind="text">Join The
+                    Squad</h4>
+                <div class="flex">
+                    <input type="email" placeholder="ENTER EMAIL"
+                        class="bg-transparent border border-brand-lime p-2 text-white w-full font-mono focus:outline-none placeholder:text-gray-600">
+                    <button
+                        class="bg-brand-lime text-brand-black px-4 font-bold hover:bg-brand-white transition-colors">
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+
+            const menuBtn = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-on-scroll-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.05 });
+
+            document.querySelectorAll('[data-animation-on-scroll]').forEach(el => {
+                el.classList.add('animate-on-scroll-hidden');
+                observer.observe(el);
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

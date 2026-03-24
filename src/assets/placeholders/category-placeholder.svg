@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="catBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2744"/>
+      <stop offset="100%" stop-color="#243554"/>
+    </linearGradient>
+    <clipPath id="rounded">
+      <rect width="400" height="400" rx="12"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Background -->
+  <g clip-path="url(#rounded)">
+    <rect width="400" height="400" fill="url(#catBg)"/>
+    
+    <!-- Jersey silhouette -->
+    <g transform="translate(100, 80)" opacity="0.2">
+      <path d="M100 40 L140 65 L165 50 L195 65 L250 40 L275 90 L255 240 L175 270 L155 250 L135 270 L55 240 L35 90 Z" fill="#ffffff"/>
+      <!-- Number on jersey -->
+      <text x="155" y="180" text-anchor="middle" fill="#c9302c" font-family="system-ui" font-size="72" font-weight="800">10</text>
+    </g>
+    
+    <!-- Category label area -->
+    <rect x="50" y="320" width="300" height="40" rx="6" fill="#ffffff" opacity="0.15"/>
+    
+    <!-- Decorative corner -->
+    <rect x="0" y="0" width="60" height="60" fill="#c9302c"/>
+    <polygon points="0,60 60,60 60,0" fill="#e6a82c"/>
+  </g>
+  
+  <!-- Replace label -->
+  <rect x="100" y="160" width="200" height="80" rx="8" fill="#000000" opacity="0.5"/>
+  <text x="200" y="195" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="16" font-weight="600">CATEGORY IMAGE</text>
+  <text x="200" y="220" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="12" opacity="0.8">400 × 400px</text>
+</svg>
