@@ -1,73 +1,109 @@
-# Welcome to your Lovable project
+# Babal Wears E-Commerce Website
 
-## Project info
+This is a simple e-commerce website I built for a clothing brand called Babal Wears.  
+The project was created to learn and apply web development concepts using React and Supabase.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## Live Demo
 
-There are several ways of editing your application.
 
-**Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Features
 
-**Use your preferred IDE**
+- Product listing with images  
+- Category-based filtering (T-Shirts, Hoodies, Caps, etc.)  
+- Size selection  
+- Price range filter  
+- Dynamic UI using React  
+- Data stored and managed using Supabase  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Tech Stack
 
-Follow these steps:
+- React  
+- JavaScript  
+- HTML, CSS  
+- Supabase (Database & Storage)  
+- Git & GitHub  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Project Purpose
 
-# Step 3: Install the necessary dependencies.
-npm i
+This project was built to:
+- Practice building a real-world web application  
+- Understand how frontend connects with a database  
+- Learn how to manage products, categories, and filters  
+- Improve React and JavaScript skills  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+## Installation & Setup
+
+### 1. Clone the repository
+
+
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+
+
+
+2. Install dependencies
+npm install
+3. Add environment variables
+
+Create a .env file in the root folder and add:
+
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_key
+4. Run the project
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+The app will run on:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+http://localhost:5173
+Folder Structure (Basic)
+src/
+  components/
+  pages/
+  hooks/
+  config/
+  assets/
 
-**Use GitHub Codespaces**
+2. Install dependencies
+npm install
+3. Add environment variables
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Create a .env file in the root folder and add:
 
-## What technologies are used for this project?
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_key
+4. Run the project
+npm run dev
 
-This project is built with:
+The app will run on:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+http://localhost:5173
+Folder Structure (Basic)
+src/
+  components/
+  pages/
+  hooks/
+  config/
+  assets/
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Notes
 
-## Can I connect a custom domain to my Lovable project?
+This project is still in progress and being improved
 
-Yes, you can!
+Future features may include payments, admin dashboard, and order tracking
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Author
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Antriksh Gupta
+GitHub: https://github.com/agupta362
