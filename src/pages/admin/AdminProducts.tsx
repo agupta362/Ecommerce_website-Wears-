@@ -154,10 +154,10 @@ const AdminProducts = () => {
     await createProduct.mutateAsync({
       name: formData.name,
       slug: formData.slug || formData.name.toLowerCase().replace(/\s+/g, '-'),
-      description: formData.description || '',
+      description: formData.description || null,
       price: parseFloat(formData.price) || 0,
       original_price: formData.original_price ? parseFloat(formData.original_price) : null,
-      category_id: formData.category_id || '',
+      category_id: formData.category_id || null,
       images: Array.isArray(formData.images) ? formData.images : [],
       is_featured: !!formData.is_featured,
       is_new: !!formData.is_new,
