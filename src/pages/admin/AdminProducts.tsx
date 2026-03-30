@@ -397,7 +397,7 @@ const AdminProducts = () => {
                   id="name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="Manchester United 1998-99 Home Kit"
+                  placeholder="Babal Wear Vintage Jacket"
                 />
               </div>
               <div className="space-y-2">
