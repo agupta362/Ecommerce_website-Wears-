@@ -204,8 +204,8 @@ const VideoHero = ({ videoUrl, posterImage }: VideoHeroProps) => {
             {showStats && (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4, delay: 0.4 }} className={cn('pt-6', heroLayout === 'fullbleed-overlay' ? 'border-t-2 border-foreground' : 'border-t border-border')}>
                 <div className="flex gap-8 text-xs uppercase tracking-wider">
-                  <div><span className="font-display text-2xl font-bold block">500+</span><span className="text-muted-foreground">Jersey Styles</span></div>
-                  <div><span className="font-display text-2xl font-bold block">2024</span><span className="text-muted-foreground">Since Founding</span></div>
+                  <div><span className="font-display text-2xl font-bold block">500+</span><span className="text-muted-foreground">Streetwear Products</span></div>
+                  <div><span className="font-display text-2xl font-bold block">2014</span><span className="text-muted-foreground">Since Founding</span></div>
                   <div><span className="font-display text-2xl font-bold block">100%</span><span className="text-muted-foreground">Authentic Look</span></div>
                 </div>
               </motion.div>
