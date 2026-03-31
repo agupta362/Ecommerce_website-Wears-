@@ -216,16 +216,16 @@ const VideoHero = ({ videoUrl, posterImage }: VideoHeroProps) => {
           {showRightPanel && (
             <div className="hidden lg:flex bg-accent border-l-2 border-foreground relative overflow-hidden items-center justify-center">
               <motion.div initial={{ opacity: 0, rotate: -5 }} animate={{ opacity: 1, rotate: -8 }} transition={{ duration: 0.6, delay: 0.3 }} className="absolute top-20 right-12 bg-background border-2 border-foreground p-4 transform shadow-none">
-                <span className="font-display text-sm uppercase tracking-wider block font-bold">Stitched Crests</span>
+                <span className="font-display text-sm uppercase tracking-wider block font-bold">Limited Drops</span>
                 <span className="text-xs text-muted-foreground uppercase">Premium Detail</span>
               </motion.div>
               <motion.div initial={{ opacity: 0, rotate: 5 }} animate={{ opacity: 1, rotate: 6 }} transition={{ duration: 0.6, delay: 0.5 }} className="absolute bottom-32 left-12 bg-foreground text-background border-2 border-foreground p-4 transform">
-                <span className="font-display text-sm uppercase tracking-wider block font-bold">Inter '10</span>
-                <span className="text-xs uppercase opacity-80">Champions League</span>
+                <span className="font-display text-sm uppercase tracking-wider block font-bold">Babal 26'</span>
+                <span className="text-xs uppercase opacity-80">New Editions</span>
               </motion.div>
               <motion.div initial={{ opacity: 0, rotate: -3 }} animate={{ opacity: 1, rotate: 3 }} transition={{ duration: 0.6, delay: 0.7 }} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-background border-2 border-foreground p-6 transform">
-                <span className="font-display text-lg uppercase tracking-wider block font-bold">Retro</span>
-                <span className="font-display text-lg uppercase tracking-wider block text-outline text-foreground">Glory</span>
+                <span className="font-display text-lg uppercase tracking-wider block font-bold">Street</span>
+                <span className="font-display text-lg uppercase tracking-wider block text-outline text-foreground">Essentials</span>
               </motion.div>
             </div>
           )}
