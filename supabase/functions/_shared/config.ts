@@ -41,11 +41,11 @@ export const DATABASE_CONFIG = {
 // =============================================================================
 export const BUSINESS_CONFIG = {
   name: "Babal Wears",
-  email: "antrikshgupta0@gmail.com",
+  email: "antrikshgupta0@gmail.coms",
   phone: "+977 016-1234567",
   adminEmail: "kshitizgupta148@gmail.com",
   domain: "https://babalwears.com",
-  fromEmail: "Babal Wears <noreply@retrokitnepal.com>",
+  fromEmail: "Babal Wears <noreply@babalwears.com>",
 } as const;
 
 // =============================================================================

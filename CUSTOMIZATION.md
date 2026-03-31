@@ -153,9 +153,9 @@ shop: {
     priceRange: true,   // Show price range slider
     category: true,     // Show category filter
     size: true,         // Show size buttons
-    league: true,       // Show league checkboxes (clothing)
-    era: true,          // Show era checkboxes (vintage stores)
-    kitType: true,      // Show kit type buttons (jersey stores)
+    league: false,       // Show league checkboxes (clothing)
+    era: false,          // Show era checkboxes (vintage stores)
+    kitType: false,      // Show kit type buttons (jersey stores)
     material: false,    // Show material filter (jewelry)
     gemstone: false,    // Show gemstone filter (jewelry)
     skinType: false,    // Show skin type filter (cosmetics)

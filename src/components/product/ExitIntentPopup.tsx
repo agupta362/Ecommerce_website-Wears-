@@ -18,29 +18,27 @@ const ExitIntentPopup = () => {
   const dismiss = useCallback(() => {
     setIsVisible(false);
     try {
-      sessionStorage.setItem(DISMISSED_KEY, 'true');
+      localStorage.setItem(DISMISSED_KEY, 'true');
     } catch {}
   }, []);
 
   useEffect(() => {
-    // Don't show if already dismissed this session
+    // Don't show if already dismissed
     try {
-      if (sessionStorage.getItem(DISMISSED_KEY)) return;
+      if (localStorage.getItem(DISMISSED_KEY)) return;
     } catch {}
 
     let timeout: ReturnType<typeof setTimeout>;
 
-    // Desktop: mouse leave viewport
     const handleMouseLeave = (e: MouseEvent) => {
       if (e.clientY <= 0) {
         setIsVisible(true);
       }
     };
 
-    // Mobile: show after 30s of browsing as fallback
     timeout = setTimeout(() => {
       try {
-        if (!sessionStorage.getItem(DISMISSED_KEY)) {
+        if (!localStorage.getItem(DISMISSED_KEY)) {
           setIsVisible(true);
         }
       } catch {
@@ -62,10 +60,8 @@ const ExitIntentPopup = () => {
 
     setIsSubmitting(true);
     try {
-      // Generate a unique discount code
       const code = `WELCOME${Math.random().toString(36).substring(2, 8).toUpperCase()}`;
 
-      // Save to newsletter_subscribers
       const { error: subError } = await supabase
         .from('newsletter_subscribers')
         .insert({ email: email.trim().toLowerCase() });
@@ -74,7 +70,6 @@ const ExitIntentPopup = () => {
         throw subError;
       }
 
-      // Create the discount code in DB
       const { error: discountError } = await supabase
         .from('discount_codes')
         .insert({
@@ -89,7 +84,6 @@ const ExitIntentPopup = () => {
 
       if (discountError) {
         console.error('Failed to create discount code:', discountError);
-        // Still show a generic code even if DB insert fails
       }
 
       setDiscountCode(code);
