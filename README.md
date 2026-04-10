@@ -6,7 +6,7 @@ The project was created to learn and apply web development concepts using React 
 ---
 
 ## Live Demo
-
+https://ecom-website-kappa-lemon.vercel.app/
 
 
 ---
@@ -40,61 +40,6 @@ This project was built to:
 - Learn how to manage products, categories, and filters  
 - Improve React and JavaScript skills  
 
----
-
-## Installation & Setup
-
-### 1. Clone the repository
-
-
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-
-
-
-2. Install dependencies
-npm install
-3. Add environment variables
-
-Create a .env file in the root folder and add:
-
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_key
-4. Run the project
-npm run dev
-
-The app will run on:
-
-http://localhost:5173
-Folder Structure (Basic)
-src/
-  components/
-  pages/
-  hooks/
-  config/
-  assets/
-
-2. Install dependencies
-npm install
-3. Add environment variables
-
-Create a .env file in the root folder and add:
-
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_key
-4. Run the project
-npm run dev
-
-The app will run on:
-
-http://localhost:5173
-Folder Structure (Basic)
-src/
-  components/
-  pages/
-  hooks/
-  config/
-  assets/
 
 
 Notes
