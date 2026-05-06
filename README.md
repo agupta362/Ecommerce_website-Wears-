@@ -6,7 +6,7 @@ The project was created to learn and apply web development concepts using React 
 ---
 
 ## Live Demo
-https://ecom-website-kappa-lemon.vercel.app/
+https://clothing-store-demo-work.vercel.app
 
 
 ---
