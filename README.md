@@ -1,54 +1,55 @@
-# Babal Wears E-Commerce Website
+Babal Wears
 
-This is a simple e-commerce website I built for a clothing brand called Babal Wears.  
-The project was created to learn and apply web development concepts using React and Supabase.
+A vintage streetwear e-commerce storefront built with React and TypeScript, connected to Supabase for product data and image storage. Live on Vercel.
 
----
-
-## Live Demo
-https://clothing-store-demo-work.vercel.app
+Live site: https://clothing-store-demo-work.vercel.app
 
 
----
+What it does
 
-## Features
 
-- Product listing with images  
-- Category-based filtering (T-Shirts, Hoodies, Caps, etc.)  
-- Size selection  
-- Price range filter  
-- Dynamic UI using React  
-- Data stored and managed using Supabase  
-
----
-
-## Tech Stack
-
-- React  
-- JavaScript  
-- HTML, CSS  
-- Supabase (Database & Storage)  
-- Git & GitHub  
-
----
-
-## Project Purpose
-
-This project was built to:
-- Practice building a real-world web application  
-- Understand how frontend connects with a database  
-- Learn how to manage products, categories, and filters  
-- Improve React and JavaScript skills  
+Browse a product catalog with category-based filtering, size selection, and price range filtering
+Product images and data served from Supabase storage and database
+Filtering updates the view in real time without any page reloads
+Fully responsive layout that works on mobile and desktop
+Deployed to Vercel with automatic builds on every push to main
 
 
 
-Notes
+Stack
 
-This project is still in progress and being improved
+LayerTechFrontendReact, TypeScript, ViteStylingTailwind CSS, shadcn/uiDatabase & StorageSupabaseDeploymentVercel
 
-Future features may include payments, admin dashboard, and order tracking
 
-Author
+Run locally
 
-Antriksh Gupta
-GitHub: https://github.com/agupta362
+bashgit clone https://github.com/agupta362/Ecommerce_website-Wears-.git
+cd Ecommerce_website-Wears-
+npm install
+
+Create a .env file in the root:
+
+envVITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+You can get these from your Supabase project settings under API.
+
+Then:
+
+bashnpm run dev
+
+Open http://localhost:5173
+
+
+Project structure
+
+src/
+  components/     reusable UI components
+  pages/          page-level components
+  lib/            Supabase client and utility functions
+  types/          TypeScript type definitions
+
+
+Deployment
+
+The project is deployed on Vercel. Any push to main triggers an automatic build and deployment. Environment variables are set in the Vercel dashboard under project settings.
