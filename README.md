@@ -4,7 +4,6 @@ A vintage streetwear e-commerce storefront built with React and TypeScript, conn
 
 **Live site:** https://clothing-store-demo-work.vercel.app
 
----
 
 ## What it does
 
@@ -14,7 +13,6 @@ A vintage streetwear e-commerce storefront built with React and TypeScript, conn
 - Fully responsive layout that works on mobile and desktop
 - Deployed to Vercel with automatic builds on every push to main
 
----
 
 ## Stack
 
@@ -25,7 +23,6 @@ A vintage streetwear e-commerce storefront built with React and TypeScript, conn
 | Database & Storage | Supabase |
 | Deployment | Vercel |
 
----
 
 ## Run locally
 
@@ -52,7 +49,6 @@ npm run dev
 
 Open `http://localhost:5173`
 
----
 
 ## Project structure
 
@@ -64,7 +60,6 @@ src/
   types/          TypeScript type definitions
 ```
 
----
 
 ## Deployment
 
